@@ -21,6 +21,7 @@
 
 body {
     font-family: 'Roboto',sans-serif;
+    background-color: var(--background-color-light);
     }
 
 /*cap*/
@@ -68,15 +69,22 @@ body {
 }
 
 .mail:hover,
-.phone-number:hover {
+.mail:focus {
     color: var(--accent-color);
 }
 
-.page-header {
-    background-color: var(--background-color-light);
+.phone-number:hover,
+.phone-number:focus {
+    color: var(--accent-color);
 }
 
+
+
 /*hero*/
+
+.hero {
+    background-color: var(--title-color);
+}
 
 .caption {
     font-weight: 600;
@@ -85,7 +93,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-align: center;
-    /*color: var(--background-color-light);*/
+    color: var(--background-color-light);
 
 }
 
@@ -98,20 +106,19 @@ button {
     letter-spacing: 0.04em;
     color: var(--background-color-light);
     background-color: var(--accent-color);
+    /*border: 1px solid var(--dark-theme-text);*/
+    border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
 }
 
 button:hover,
 button:focus {
-    background-color: var(--accent-color-hover);
+    color: var(--background-color-light);
+    background-color: var(--accent-color);
 }
 
 /*description*/
-
-.description {
-    background-color: var(--background-color-second);
-}
 
 .title-item {
     font-weight: 600;
@@ -176,21 +183,15 @@ button:focus {
 
 /*portfolio*/
 
-.portfolio {
-    background-color: var(--background-color-second);
-}
-
 .portfolio-link:hover,
 .portfolio-link:focus {
     color: var(--accent-color-hover);
 }
 
-.subject {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: var(--logo-dark-thema);
+.button-list {
+    color: var(--accent-color);
+    background-color: var(--logo-dark-thema);
+    border: 1px solid var(--dark-theme-text);
 }
 
 
